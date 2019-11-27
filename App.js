@@ -34,7 +34,7 @@ class App extends React.Component {
     });
   }
 
-  fetchWeather(lat = 25, lon = 25) {
+  fetchWeather(lat =10.01516 , lon =76.347315 ) {
     console.log('a')
     fetch(
         `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=metric`
