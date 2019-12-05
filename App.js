@@ -22,8 +22,9 @@ class App extends React.Component {
   componentDidMount() {
     this.fetchWeather();
     Geolocation.getCurrentPosition(this.locationUpdated, console.log, {
+      enableHighAccuracy: true,
+      timeout: 10000,
       maximumAge: 10000,
-      enableHighAccuracy: false,
     });
   }
 
